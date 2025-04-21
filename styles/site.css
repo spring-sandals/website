@@ -4,6 +4,8 @@
     --blue: #086dc3;
     --gray-2: #d9e9e9;
     --gray-1: #f4f8fa;
+
+    --side-padding: 2rem;
 }
 
 html {
@@ -25,25 +27,21 @@ header {
     background-color: var(--green);
     color: white;
     height: 5rem;
-    align-items: center;
-}
+    padding-inline: var(--side-padding);
 
-header.container {
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-}
 
-header.container img {
-    width: 3rem;
+    img {
+        height: 3rem;
+    }
 }
 
 .container {
-    --column-gap: 2rem;
     display: grid;
-    grid-template-columns: 1fr min(60rem, calc(100% - 2 * var(--column-gap))) 1fr;
+    grid-template-columns: 1fr min(60rem, calc(100% - 2 * var(--side-padding))) 1fr;
 
     & > * {
         grid-column: 2;
