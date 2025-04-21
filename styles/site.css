@@ -28,6 +28,18 @@ header {
     align-items: center;
 }
 
+header.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+header.container img {
+    width: 3rem;
+}
+
 .container {
     --column-gap: 2rem;
     display: grid;
