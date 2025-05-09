@@ -15,10 +15,6 @@ html {
     box-sizing: border-box;
 }
 
-body {
-    padding-bottom: 2rem;
-}
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -37,6 +33,12 @@ header {
     img {
         height: 3rem;
     }
+}
+
+footer {
+    margin-top: 4rem;
+    padding: var(--side-padding);
+    border-top: 1px solid var(--gray-2);
 }
 
 .container {
